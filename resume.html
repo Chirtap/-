@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邱锴乐 · 个人简历</title>
+  <style>
+    /* ============ 基础样式 ============ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        "Noto Sans SC", "Source Han Sans SC", sans-serif;
+      color: #2b2b2b;
+      background-color: #f2f2f2;
+      line-height: 1.7;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ============ 纸张页面 ============ */
+    .page {
+      max-width: 210mm;
+      margin: 24px auto;
+      background: #ffffff;
+      padding: 48px 56px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ============ 页眉 ============ */
+    header {
+      text-align: center;
+      border-bottom: 2px solid #2b2b2b;
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      letter-spacing: 8px;
+      margin-bottom: 6px;
+    }
+
+    header .subtitle {
+      font-size: 15px;
+      color: #555555;
+      letter-spacing: 2px;
+    }
+
+    /* ============ 区块 ============ */
+    section {
+      margin-bottom: 26px;
+    }
+
+    h2 {
+      font-size: 17px;
+      letter-spacing: 3px;
+      padding-left: 10px;
+      border-left: 4px solid #2b2b2b;
+      margin-bottom: 12px;
+    }
+
+    .intro-text {
+      text-indent: 2em;
+      font-size: 14.5px;
+      color: #333333;
+    }
+
+    /* ============ 信息表格 ============ */
+    table.info {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+    }
+
+    table.info td {
+      padding: 6px 8px;
+      vertical-align: top;
+    }
+
+    table.info td.label {
+      width: 90px;
+      font-weight: 600;
+      color: #444444;
+      letter-spacing: 1px;
+    }
+
+    /* ============ 兴趣列表 ============ */
+    ul.tags {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.tags li {
+      background: #f0f0f0;
+      border: 1px solid #d8d8d8;
+      border-radius: 999px;
+      padding: 2px 18px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    /* ============ 页脚 ============ */
+    footer {
+      margin-top: 30px;
+      padding-top: 12px;
+      border-top: 1px solid #dddddd;
+      font-size: 13px;
+      color: #777777;
+      text-align: center;
+    }
+
+    /* ============ 打印样式 ============ */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        max-width: none;
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 20mm 22mm;
+        box-shadow: none;
+        page-break-after: avoid;
+      }
+
+      h1, h2 {
+        page-break-after: avoid;
+      }
+
+      section, .info, ul.tags, footer {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <!-- 页眉 -->
+    <header>
+      <h1>邱锴乐</h1>
+      <p class="subtitle">集成电路设计与集成系统 专业</p>
+    </header>
+
+    <!-- 个人简介 -->
+    <section>
+      <h2>个人简介</h2>
+      <p class="intro-text">
+        我是邱锴乐，一名集成电路设计与集成系统专业的学生，对芯片设计与硬件方向充满热情。
+        平时热爱游戏、小说与写作，善于在兴趣中保持思考与创造力，乐于学习新技术、迎接新挑战。
+      </p>
+    </section>
+
+    <!-- 基本信息 -->
+    <section>
+      <h2>基本信息</h2>
+      <table class="info">
+        <tr>
+          <td class="label">姓　名</td>
+          <td>邱锴乐</td>
+        </tr>
+        <tr>
+          <td class="label">专　业</td>
+          <td>集成电路设计与集成系统</td>
+        </tr>
+        <tr>
+          <td class="label">联系方式</td>
+          <td>邮箱：2967379295@qq.com</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 兴趣爱好 -->
+    <section>
+      <h2>兴趣爱好</h2>
+      <ul class="tags">
+        <li>🎮 游戏</li>
+        <li>📚 小说</li>
+        <li>✍️ 写作</li>
+      </ul>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+      <p>邱锴乐 · 个人简历 · 邮箱：2967379295@qq.com</p>
+    </footer>
+  </main>
+</body>
+</html>

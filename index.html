@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邱锴乐 · 个人主页</title>
+  <style>
+    /* ============ 基础 ============ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        "Noto Sans SC", sans-serif;
+      color: #4a4a55;
+      background: linear-gradient(160deg, #fdf3ec 0%, #f6f1fb 55%, #eef6f4 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 48px 20px 60px;
+    }
+
+    /* ============ 顶部头像区域 ============ */
+    .hero {
+      text-align: center;
+      padding: 56px 20px 46px;
+    }
+
+    .avatar {
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 52px;
+      background: linear-gradient(135deg, #f9c6b9, #f7b7cf);
+      box-shadow: 0 12px 28px rgba(214, 150, 150, 0.35);
+      user-select: none;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #5b5b6b;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+    }
+
+    .hero .major {
+      display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      background: linear-gradient(120deg, #9db8c9, #b39cc9);
+      padding: 6px 22px;
+      border-radius: 999px;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 14px rgba(157, 184, 201, 0.35);
+    }
+
+    .hero .slogan {
+      margin-top: 18px;
+      font-size: 15px;
+      color: #8b8b98;
+      letter-spacing: 1px;
+    }
+
+    /* ============ 卡片布局 ============ */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(6px);
+      border-radius: 20px;
+      padding: 28px 26px;
+      box-shadow: 0 10px 30px rgba(140, 140, 170, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 38px rgba(140, 140, 170, 0.2);
+    }
+
+    .card .icon {
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    .card h2 {
+      margin: 14px 0 10px;
+      font-size: 20px;
+      color: #575767;
+      letter-spacing: 2px;
+    }
+
+    .card p, .card li {
+      font-size: 14.5px;
+      color: #6f6f7e;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+
+    .card ul li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      font-weight: 700;
+      color: #b3a1c9;
+    }
+
+    /* 兴趣标签 */
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      font-size: 13.5px;
+      color: #6c5f7a;
+      background: #f2ecf9;
+      border-radius: 999px;
+      padding: 4px 16px;
+      letter-spacing: 1px;
+      border: 1px solid #e5dbf1;
+    }
+
+    /* 联系方式 */
+    .contact a {
+      color: #7c8aa5;
+      text-decoration: none;
+      border-bottom: 1px dashed #b9c2d4;
+      word-break: break-all;
+      transition: color 0.2s ease;
+    }
+
+    .contact a:hover {
+      color: #6a7c9e;
+      border-bottom-style: solid;
+    }
+
+    /* ============ 页脚 ============ */
+    footer {
+      margin-top: 44px;
+      text-align: center;
+      font-size: 13px;
+      color: #a3a3b0;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 顶部介绍区 -->
+    <header class="hero">
+      <div class="avatar">👋</div>
+      <h1>邱锴乐</h1>
+      <span class="major">集成电路设计与集成系统</span>
+      <p class="slogan">用兴趣驱动学习，用文字记录思考 ✨</p>
+    </header>
+
+    <!-- 卡片区 -->
+    <main class="grid">
+      <!-- 自我介绍 -->
+      <section class="card">
+        <div class="icon">🧑‍💻</div>
+        <h2>自我介绍</h2>
+        <p>
+          你好！我是邱锴乐，一名集成电路设计与集成系统专业的学生，
+          正在探索芯片设计与硬件世界的奇妙之处。我相信技术与想象力同样重要，
+          希望未来能设计出属于自己的作品，也愿意结交志同道合的朋友。
+        </p>
+      </section>
+
+      <!-- 兴趣爱好 -->
+      <section class="card">
+        <div class="icon">🎯</div>
+        <h2>兴趣爱好</h2>
+        <div class="tag-list">
+          <span class="tag">🎮 游戏</span>
+          <span class="tag">📚 小说</span>
+          <span class="tag">✍️ 写作</span>
+        </div>
+        <ul style="margin-top: 14px;">
+          <li>在游戏的世界里体验不同的人生</li>
+          <li>用小说打开想象的无限可能</li>
+          <li>用写作记录灵感与思考</li>
+        </ul>
+      </section>
+
+      <!-- 联系方式 -->
+      <section class="card contact">
+        <div class="icon">📮</div>
+        <h2>联系方式</h2>
+        <p>有任何想聊的，欢迎通过邮箱联系我：</p>
+        <p style="margin-top: 10px;">
+          📧 <a href="mailto:2967379295@qq.com">2967379295@qq.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 邱锴乐 · 个人主页 · 用 HTML 与 CSS 精心制作</p>
+    </footer>
+  </div>
+</body>
+</html>
